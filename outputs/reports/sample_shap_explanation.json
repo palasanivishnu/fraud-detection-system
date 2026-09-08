@@ -1,0 +1,22 @@
+{
+    "ml_fraud_score": 0.9968817234039307,
+    "ml_prediction": 1,
+    "top_features": [
+        {
+            "feature": "amount",
+            "feature_value": 809.11,
+            "shap_value": 4.328539848327637
+        },
+        {
+            "feature": "time_since_last_txn_sec",
+            "feature_value": 356.0,
+            "shap_value": 1.102871298789978
+        },
+        {
+            "feature": "amount_vs_avg_ratio",
+            "feature_value": 13.956322216956709,
+            "shap_value": 0.24756257236003876
+        }
+    ],
+    "human_readable_reason": "ML explanation: amount=809.11 increased fraud risk; time_since_last_txn_sec=356.00 increased fraud risk; amount_vs_avg_ratio=13.96 increased fraud risk."
+}

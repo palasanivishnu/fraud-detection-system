@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Environment & IDE
+.env
+.venv/
+env/
+venv/
+.vscode/
+.idea/
+.DS_Store
+
+# Data & Large outputs
+data/raw/
+data/processed/
+*.csv
+
+# Streamlit
+.streamlit/secrets.toml

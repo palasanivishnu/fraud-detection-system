@@ -1,0 +1,32 @@
+{
+    "model": "XGBoost",
+    "feature_count": 6,
+    "features": [
+        "amount",
+        "amount_vs_avg_ratio",
+        "txn_count_last_5min",
+        "time_since_last_txn_sec",
+        "distance_from_last_location_km",
+        "merchant_category_is_new_for_user"
+    ],
+    "best_cv_pr_auc": 0.4654427179137611,
+    "best_parameters": {
+        "colsample_bytree": 0.9486212527455787,
+        "gamma": 0.7135066533871786,
+        "learning_rate": 0.03819130560209075,
+        "max_depth": 6,
+        "min_child_weight": 9,
+        "n_estimators": 356,
+        "reg_alpha": 0.16172900811143134,
+        "reg_lambda": 0.14096175149815865,
+        "subsample": 0.9960660809801551
+    },
+    "validation_accuracy": 0.9320068637091021,
+    "validation_precision": 0.07036326834984553,
+    "validation_recall": 0.8800799467021986,
+    "validation_f1": 0.130308261405672,
+    "validation_roc_auc": 0.9723830722685778,
+    "validation_pr_auc": 0.4777052814578071,
+    "threshold": 0.5,
+    "scale_pos_weight": 171.75179856115108
+}

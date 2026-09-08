@@ -1,0 +1,23 @@
+{
+    "model": "XGBoost",
+    "model_type": "baseline",
+    "feature_count": 6,
+    "features": [
+        "amount",
+        "amount_vs_avg_ratio",
+        "txn_count_last_5min",
+        "time_since_last_txn_sec",
+        "distance_from_last_location_km",
+        "merchant_category_is_new_for_user"
+    ],
+    "scale_pos_weight": 171.75179856115108,
+    "threshold": 0.5,
+    "accuracy": 0.9339772880637014,
+    "precision": 0.07214461791290057,
+    "recall": 0.8774150566289141,
+    "f1": 0.1333265843288115,
+    "roc_auc": 0.9723982760558897,
+    "pr_auc": 0.44958326241188656,
+    "training_rows": 1037340,
+    "validation_rows": 259335
+}

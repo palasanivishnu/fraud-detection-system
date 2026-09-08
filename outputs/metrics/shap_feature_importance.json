@@ -1,0 +1,26 @@
+[
+    {
+        "feature": "amount",
+        "mean_absolute_shap": 3.5331926345825195
+    },
+    {
+        "feature": "time_since_last_txn_sec",
+        "mean_absolute_shap": 0.5889312624931335
+    },
+    {
+        "feature": "amount_vs_avg_ratio",
+        "mean_absolute_shap": 0.5297155976295471
+    },
+    {
+        "feature": "distance_from_last_location_km",
+        "mean_absolute_shap": 0.20037852227687836
+    },
+    {
+        "feature": "merchant_category_is_new_for_user",
+        "mean_absolute_shap": 0.022851230576634407
+    },
+    {
+        "feature": "txn_count_last_5min",
+        "mean_absolute_shap": 0.0
+    }
+]

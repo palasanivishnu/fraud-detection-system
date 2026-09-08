@@ -1,0 +1,319 @@
+{
+  "phase": 14,
+  "title": "Production Hardening",
+  "project_version": "V2.1",
+  "source_analysis": [
+    {
+      "file": "feature_contract.py",
+      "exists": true,
+      "syntax_valid": true,
+      "logging_calls": 0,
+      "try_blocks": 0,
+      "exceptions_raised": 0,
+      "error": ""
+    },
+    {
+      "file": "ml_inference.py",
+      "exists": true,
+      "syntax_valid": true,
+      "logging_calls": 0,
+      "try_blocks": 0,
+      "exceptions_raised": 9,
+      "error": ""
+    },
+    {
+      "file": "ml_service.py",
+      "exists": true,
+      "syntax_valid": true,
+      "logging_calls": 0,
+      "try_blocks": 0,
+      "exceptions_raised": 1,
+      "error": ""
+    },
+    {
+      "file": "rule_engine.py",
+      "exists": true,
+      "syntax_valid": true,
+      "logging_calls": 0,
+      "try_blocks": 0,
+      "exceptions_raised": 2,
+      "error": ""
+    },
+    {
+      "file": "decision_engine.py",
+      "exists": true,
+      "syntax_valid": true,
+      "logging_calls": 0,
+      "try_blocks": 0,
+      "exceptions_raised": 8,
+      "error": ""
+    },
+    {
+      "file": "shap_explainer.py",
+      "exists": true,
+      "syntax_valid": true,
+      "logging_calls": 0,
+      "try_blocks": 0,
+      "exceptions_raised": 7,
+      "error": ""
+    },
+    {
+      "file": "detection_service.py",
+      "exists": true,
+      "syntax_valid": true,
+      "logging_calls": 0,
+      "try_blocks": 0,
+      "exceptions_raised": 1,
+      "error": ""
+    }
+  ],
+  "syntax_validation": [
+    {
+      "file": "feature_contract.py",
+      "status": "PASS"
+    },
+    {
+      "file": "ml_inference.py",
+      "status": "PASS"
+    },
+    {
+      "file": "ml_service.py",
+      "status": "PASS"
+    },
+    {
+      "file": "rule_engine.py",
+      "status": "PASS"
+    },
+    {
+      "file": "decision_engine.py",
+      "status": "PASS"
+    },
+    {
+      "file": "shap_explainer.py",
+      "status": "PASS"
+    },
+    {
+      "file": "detection_service.py",
+      "status": "PASS"
+    }
+  ],
+  "json_validation": [
+    {
+      "file": "xgboost_fraud_detector.json",
+      "status": "PASS",
+      "json_type": "dict"
+    },
+    {
+      "file": "feature_columns.json",
+      "status": "PASS",
+      "json_type": "dict"
+    },
+    {
+      "file": "model_info.json",
+      "status": "PASS",
+      "json_type": "dict"
+    },
+    {
+      "file": "deployment_config.json",
+      "status": "PASS",
+      "json_type": "dict"
+    },
+    {
+      "file": "deployment_manifest.json",
+      "status": "PASS",
+      "json_type": "dict"
+    },
+    {
+      "file": "rule_engine_config.json",
+      "status": "PASS",
+      "json_type": "dict"
+    },
+    {
+      "file": "decision_engine_config.json",
+      "status": "PASS",
+      "json_type": "dict"
+    }
+  ],
+  "deployment_inventory": [
+    {
+      "file": "feature_contract.py",
+      "exists": true,
+      "size_bytes": 294,
+      "modified_timestamp": "2026-09-05T11:21:11.446146+00:00"
+    },
+    {
+      "file": "ml_inference.py",
+      "exists": true,
+      "size_bytes": 3168,
+      "modified_timestamp": "2026-09-05T11:21:30.824107+00:00"
+    },
+    {
+      "file": "ml_service.py",
+      "exists": true,
+      "size_bytes": 272,
+      "modified_timestamp": "2026-09-05T11:21:49.394119+00:00"
+    },
+    {
+      "file": "rule_engine.py",
+      "exists": true,
+      "size_bytes": 2948,
+      "modified_timestamp": "2026-09-05T11:46:50.981923+00:00"
+    },
+    {
+      "file": "decision_engine.py",
+      "exists": true,
+      "size_bytes": 3570,
+      "modified_timestamp": "2026-09-05T12:02:31.288790+00:00"
+    },
+    {
+      "file": "shap_explainer.py",
+      "exists": true,
+      "size_bytes": 2971,
+      "modified_timestamp": "2026-09-05T12:13:26.210414+00:00"
+    },
+    {
+      "file": "detection_service.py",
+      "exists": true,
+      "size_bytes": 4017,
+      "modified_timestamp": "2026-09-05T12:20:24.410919+00:00"
+    },
+    {
+      "file": "xgboost_fraud_detector.json",
+      "exists": true,
+      "size_bytes": 1951197,
+      "modified_timestamp": "2026-09-04T03:39:00.823374+00:00"
+    },
+    {
+      "file": "feature_columns.json",
+      "exists": true,
+      "size_bytes": 262,
+      "modified_timestamp": "2026-09-05T11:19:55.159682+00:00"
+    },
+    {
+      "file": "model_info.json",
+      "exists": true,
+      "size_bytes": 625,
+      "modified_timestamp": "2026-09-05T11:20:07.749425+00:00"
+    },
+    {
+      "file": "deployment_config.json",
+      "exists": true,
+      "size_bytes": 399,
+      "modified_timestamp": "2026-09-05T11:20:22.652435+00:00"
+    },
+    {
+      "file": "deployment_manifest.json",
+      "exists": true,
+      "size_bytes": 553,
+      "modified_timestamp": "2026-09-05T11:20:40.795243+00:00"
+    },
+    {
+      "file": "rule_engine_config.json",
+      "exists": true,
+      "size_bytes": 337,
+      "modified_timestamp": "2026-09-05T11:46:30.190177+00:00"
+    },
+    {
+      "file": "decision_engine_config.json",
+      "exists": true,
+      "size_bytes": 136,
+      "modified_timestamp": "2026-09-05T12:02:11.527241+00:00"
+    },
+    {
+      "file": "requirements.txt",
+      "exists": true,
+      "size_bytes": 0,
+      "modified_timestamp": "2026-09-01T10:52:51.142743+00:00"
+    }
+  ],
+  "feature_contract": {
+    "expected": [
+      "amount",
+      "amount_vs_avg_ratio",
+      "txn_count_last_5min",
+      "time_since_last_txn_sec",
+      "distance_from_last_location_km",
+      "merchant_category_is_new_for_user"
+    ],
+    "configured": [
+      "amount",
+      "amount_vs_avg_ratio",
+      "txn_count_last_5min",
+      "time_since_last_txn_sec",
+      "distance_from_last_location_km",
+      "merchant_category_is_new_for_user"
+    ]
+  },
+  "model_validation": {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Fraud-detection-ML-V2\\models\\xgboost_fraud_detector.json",
+    "size_bytes": 1951197,
+    "loaded_successfully": true,
+    "model_features": [
+      "amount",
+      "amount_vs_avg_ratio",
+      "txn_count_last_5min",
+      "time_since_last_txn_sec",
+      "distance_from_last_location_km",
+      "merchant_category_is_new_for_user"
+    ]
+  },
+  "model_version_metadata": {
+    "model_info": {
+      "model": "XGBoost",
+      "model_version": "2.0",
+      "selected_model": "XGBoost_Baseline",
+      "feature_count": 6,
+      "features": [
+        "amount",
+        "amount_vs_avg_ratio",
+        "txn_count_last_5min",
+        "time_since_last_txn_sec",
+        "distance_from_last_location_km",
+        "merchant_category_is_new_for_user"
+      ],
+      "evaluation": {
+        "accuracy": 0.9321977474227082,
+        "precision": 0.04692201764675881,
+        "recall": 0.8578088578088578,
+        "f1": 0.08897700621388331,
+        "roc_auc": 0.9652000907887204,
+        "pr_auc": 0.3532678289861558
+      }
+    },
+    "deployment_manifest": {
+      "deployment_name": "StreamSentinel_ML_V2",
+      "model_file": "xgboost_fraud_detector.json",
+      "feature_file": "feature_columns.json",
+      "model_info_file": "model_info.json",
+      "config_file": "deployment_config.json",
+      "model_type": "XGBoost",
+      "model_version": "2.0",
+      "feature_count": 6,
+      "features": [
+        "amount",
+        "amount_vs_avg_ratio",
+        "txn_count_last_5min",
+        "time_since_last_txn_sec",
+        "distance_from_last_location_km",
+        "merchant_category_is_new_for_user"
+      ]
+    }
+  },
+  "error_handling": {
+    "success_test": {
+      "operation": "controlled_success_test",
+      "status": "SUCCESS",
+      "result": 42,
+      "error": null
+    },
+    "failure_test": {
+      "operation": "controlled_failure_test",
+      "status": "ERROR",
+      "result": null,
+      "error": "ValueError: Controlled error"
+    }
+  },
+  "security_scan": {
+    "potential_secret_files": []
+  }
+}

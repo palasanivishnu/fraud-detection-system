@@ -1,0 +1,23 @@
+{
+  "phase": 12,
+  "title": "Performance & Latency Benchmarking",
+  "project_version": "V2.1",
+  "full_detection_pipeline": {
+    "component": "Full detection pipeline",
+    "function": "get_ml_score",
+    "warmup_runs": 20,
+    "benchmark_runs": 1000,
+    "mean_ms": 4.1202853999893705,
+    "median_ms": 3.7263499998516636,
+    "p95_ms": 5.634839999856922,
+    "p99_ms": 7.2749789999124905,
+    "min_ms": 2.992100000483333,
+    "max_ms": 45.213999999759835
+  },
+  "batch_throughput": {
+    "batch_size": 1000,
+    "total_time_sec": 3.960184499999741,
+    "throughput_transactions_per_second": 252.51348769231973,
+    "average_transaction_time_ms": 3.9601844999997406
+  }
+}

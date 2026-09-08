@@ -1,0 +1,50 @@
+{
+  "phase": 15,
+  "title": "Integration Contracts",
+  "project_version": "V2.1",
+  "status": "COMPLETED",
+  "contracts": {
+    "person_a_to_person_b": {
+      "name": "Feature Vector",
+      "fields": [
+        "transaction_id",
+        "user_id",
+        "amount",
+        "amount_vs_avg_ratio",
+        "txn_count_last_5min",
+        "time_since_last_txn_sec",
+        "distance_from_last_location_km",
+        "merchant_category_is_new_for_user"
+      ]
+    },
+    "person_b_to_person_c": {
+      "name": "Scoring Output",
+      "fields": [
+        "transaction_id",
+        "user_id",
+        "risk_score",
+        "rule_flags",
+        "ml_fraud_score",
+        "decision",
+        "human_readable_reason",
+        "processed_at",
+        "latency_ms"
+      ]
+    }
+  },
+  "tests": {
+    "valid_feature_vector": true,
+    "invalid_feature_vectors": 7,
+    "valid_scoring_output": true,
+    "invalid_scoring_outputs": 7,
+    "mock_person_a_to_b": true,
+    "mock_person_b_to_c": true,
+    "full_mock_flow": true,
+    "all_decisions": true
+  },
+  "output_files": {
+    "person_a_contract": "C:\\Users\\Lenovo\\Desktop\\Fraud-detection-ML-V2\\outputs\\metrics\\person_a_to_person_b_contract.json",
+    "person_b_contract": "C:\\Users\\Lenovo\\Desktop\\Fraud-detection-ML-V2\\outputs\\metrics\\person_b_to_person_c_contract.json",
+    "mock_examples": "C:\\Users\\Lenovo\\Desktop\\Fraud-detection-ML-V2\\outputs\\reports\\phase15_mock_integration_examples.json"
+  }
+}

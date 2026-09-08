@@ -1,0 +1,22 @@
+{
+    "feature_count": 6,
+    "rule_engine_available": true,
+    "ml_service_available": true,
+    "shap_service_available": true,
+    "decision_engine_available": true,
+    "single_transaction_output_valid": true,
+    "100_transaction_integration_valid": true,
+    "production_output_valid": true,
+    "production_batch_valid": true,
+    "scoring_output_fields": [
+        "transaction_id",
+        "user_id",
+        "risk_score",
+        "rule_flags",
+        "ml_fraud_score",
+        "decision",
+        "human_readable_reason",
+        "processed_at",
+        "latency_ms"
+    ]
+}

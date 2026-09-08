@@ -1,0 +1,24 @@
+2026-09-06 05:44:42,026 | INFO | streamsentinel_phase14 | Phase 14 production logging test started.
+2026-09-06 05:44:42,028 | INFO | streamsentinel_phase14 | Timestamp: 2026-09-06T00:14:42.028197
+2026-09-06 05:45:03,718 | INFO | streamsentinel_phase14 | INFO level test
+2026-09-06 05:45:03,723 | WARNING | streamsentinel_phase14 | WARNING level test
+2026-09-06 05:45:03,725 | ERROR | streamsentinel_phase14 | Controlled exception captured successfully
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Temp\ipykernel_10816\1803040535.py", line 9, in <module>
+    raise ValueError("Controlled Phase 14 exception test")
+ValueError: Controlled Phase 14 exception test
+2026-09-06 05:46:35,292 | INFO | streamsentinel_phase14 | INFO level test
+2026-09-06 05:46:35,294 | WARNING | streamsentinel_phase14 | WARNING level test
+2026-09-06 05:46:35,296 | ERROR | streamsentinel_phase14 | Controlled exception captured: Controlled Phase 14 exception test
+2026-09-06 06:00:45,882 | INFO | streamsentinel_phase14 | Operation succeeded: controlled_success_test
+2026-09-06 06:00:45,887 | ERROR | streamsentinel_phase14 | Operation failed: controlled_failure_test
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Temp\ipykernel_10816\156973215.py", line 9, in safe_execute
+    result = function_object()
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Temp\ipykernel_10816\156973215.py", line 43, in <lambda>
+    lambda: (_ for _ in ()).throw(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Temp\ipykernel_10816\156973215.py", line 43, in <genexpr>
+    lambda: (_ for _ in ()).throw(
+ValueError: Controlled error

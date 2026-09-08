@@ -1,0 +1,14 @@
+{
+    "decision_levels": [
+        "allow",
+        "otp",
+        "review",
+        "block"
+    ],
+    "four_decision_tests_passed": false,
+    "rule_decision_integration_passed": true,
+    "output_validation_passed": true,
+    "real_transaction_validation_passed": true,
+    "production_matches_notebook": true,
+    "production_batch_test_passed": true
+}

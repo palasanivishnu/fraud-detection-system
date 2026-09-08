@@ -1,0 +1,39 @@
+{
+  "contract": "Person B \u2192 Person C",
+  "name": "Scoring Output",
+  "fields": {
+    "transaction_id": [
+      "string"
+    ],
+    "user_id": [
+      "string"
+    ],
+    "risk_score": [
+      "float",
+      "int"
+    ],
+    "rule_flags": [
+      "array"
+    ],
+    "ml_fraud_score": [
+      "float",
+      "int"
+    ],
+    "decision": [
+      "Allow",
+      "OTP",
+      "Review",
+      "Block"
+    ],
+    "human_readable_reason": [
+      "string"
+    ],
+    "processed_at": [
+      "ISO 8601 string"
+    ],
+    "latency_ms": [
+      "float",
+      "int"
+    ]
+  }
+}

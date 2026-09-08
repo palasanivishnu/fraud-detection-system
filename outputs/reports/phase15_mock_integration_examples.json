@@ -1,0 +1,46 @@
+{
+  "person_a_feature_vector": {
+    "transaction_id": "MOCK_A_000001",
+    "user_id": "MOCK_USER_000001",
+    "amount": 175.0,
+    "amount_vs_avg_ratio": 1.2,
+    "txn_count_last_5min": 1,
+    "time_since_last_txn_sec": 240.0,
+    "distance_from_last_location_km": 4.0,
+    "merchant_category_is_new_for_user": 0
+  },
+  "person_b_scoring_output": {
+    "transaction_id": "MOCK_A_000001",
+    "user_id": "MOCK_USER_000001",
+    "risk_score": 0.32,
+    "rule_flags": [],
+    "ml_fraud_score": 0.41,
+    "decision": "OTP",
+    "human_readable_reason": "Transaction requires additional verification.",
+    "processed_at": "2026-09-06T00:51:19.388622+00:00",
+    "latency_ms": 5.2
+  },
+  "full_flow": {
+    "input": {
+      "transaction_id": "MOCK_A_000001",
+      "user_id": "MOCK_USER_000001",
+      "amount": 175.0,
+      "amount_vs_avg_ratio": 1.2,
+      "txn_count_last_5min": 1,
+      "time_since_last_txn_sec": 240.0,
+      "distance_from_last_location_km": 4.0,
+      "merchant_category_is_new_for_user": 0
+    },
+    "output": {
+      "transaction_id": "MOCK_A_000001",
+      "user_id": "MOCK_USER_000001",
+      "risk_score": 0.32,
+      "rule_flags": [],
+      "ml_fraud_score": 0.41,
+      "decision": "OTP",
+      "human_readable_reason": "Transaction requires additional verification.",
+      "processed_at": "2026-09-06T00:52:02.371493+00:00",
+      "latency_ms": 5.2
+    }
+  }
+}

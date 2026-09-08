@@ -1,0 +1,293 @@
+{
+  "phase": 13,
+  "title": "Robustness & Testing",
+  "project_version": "V2.1",
+  "timestamp_utc": "2026-09-05T16:49:34.937534+00:00",
+  "test_categories": {
+    "invalid_inputs": [
+      {
+        "test": "None input",
+        "status": "REJECTED",
+        "output_type": "",
+        "error": "TypeError: argument of type 'NoneType' is not iterable"
+      },
+      {
+        "test": "Empty dictionary",
+        "status": "REJECTED",
+        "output_type": "",
+        "error": "ValueError: Missing required ML features: ['amount', 'amount_vs_avg_ratio', 'txn_count_last_5min', 'time_since_last_txn_sec', 'distance_from_last_location_km', 'merchant_category_is_new_for_user']"
+      },
+      {
+        "test": "Empty list",
+        "status": "REJECTED",
+        "output_type": "",
+        "error": "TypeError: Transaction must be a dictionary."
+      },
+      {
+        "test": "Empty string",
+        "status": "REJECTED",
+        "output_type": "",
+        "error": "TypeError: Transaction must be a dictionary."
+      },
+      {
+        "test": "Integer input",
+        "status": "REJECTED",
+        "output_type": "",
+        "error": "TypeError: argument of type 'int' is not iterable"
+      },
+      {
+        "test": "Boolean input",
+        "status": "REJECTED",
+        "output_type": "",
+        "error": "TypeError: argument of type 'bool' is not iterable"
+      }
+    ],
+    "missing_fields": [
+      {
+        "field": "transaction_id",
+        "status": "UNEXPECTED_ACCEPTANCE"
+      },
+      {
+        "field": "user_id",
+        "status": "UNEXPECTED_ACCEPTANCE"
+      },
+      {
+        "field": "amount",
+        "status": "REJECTED",
+        "error": "ValueError: Missing required ML features: ['amount']"
+      },
+      {
+        "field": "amount_vs_avg_ratio",
+        "status": "REJECTED",
+        "error": "ValueError: Missing required ML features: ['amount_vs_avg_ratio']"
+      },
+      {
+        "field": "txn_count_last_5min",
+        "status": "REJECTED",
+        "error": "ValueError: Missing required ML features: ['txn_count_last_5min']"
+      },
+      {
+        "field": "time_since_last_txn_sec",
+        "status": "REJECTED",
+        "error": "ValueError: Missing required ML features: ['time_since_last_txn_sec']"
+      },
+      {
+        "field": "distance_from_last_location_km",
+        "status": "REJECTED",
+        "error": "ValueError: Missing required ML features: ['distance_from_last_location_km']"
+      },
+      {
+        "field": "merchant_category_is_new_for_user",
+        "status": "REJECTED",
+        "error": "ValueError: Missing required ML features: ['merchant_category_is_new_for_user']"
+      }
+    ],
+    "invalid_types": [
+      {
+        "field": "amount",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      },
+      {
+        "field": "amount_vs_avg_ratio",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      },
+      {
+        "field": "txn_count_last_5min",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      },
+      {
+        "field": "time_since_last_txn_sec",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      },
+      {
+        "field": "distance_from_last_location_km",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      },
+      {
+        "field": "merchant_category_is_new_for_user",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      }
+    ],
+    "special_numeric_values": [
+      {
+        "test": "amount_nan",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      },
+      {
+        "test": "amount_positive_infinity",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains non-finite feature values."
+      },
+      {
+        "test": "amount_negative_infinity",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains non-finite feature values."
+      },
+      {
+        "test": "ratio_nan",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      },
+      {
+        "test": "ratio_positive_infinity",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains non-finite feature values."
+      },
+      {
+        "test": "distance_nan",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains missing or invalid feature values."
+      },
+      {
+        "test": "distance_positive_infinity",
+        "status": "REJECTED",
+        "error": "ValueError: Transaction contains non-finite feature values."
+      }
+    ],
+    "boundary_tests": [
+      {
+        "case": "minimum_reasonable_values",
+        "status": "PASS",
+        "output_type": "dict"
+      },
+      {
+        "case": "normal_values",
+        "status": "PASS",
+        "output_type": "dict"
+      },
+      {
+        "case": "high_values",
+        "status": "PASS",
+        "output_type": "dict"
+      }
+    ],
+    "rule_scenarios": [
+      {
+        "scenario": "normal_transaction",
+        "status": "PASS",
+        "output_type": "dict"
+      },
+      {
+        "scenario": "high_amount",
+        "status": "PASS",
+        "output_type": "dict"
+      },
+      {
+        "scenario": "high_velocity",
+        "status": "PASS",
+        "output_type": "dict"
+      },
+      {
+        "scenario": "impossible_travel",
+        "status": "PASS",
+        "output_type": "dict"
+      },
+      {
+        "scenario": "new_merchant_category",
+        "status": "PASS",
+        "output_type": "dict"
+      },
+      {
+        "scenario": "multiple_signals",
+        "status": "PASS",
+        "output_type": "dict"
+      }
+    ],
+    "stress_testing": {
+      "total": 5000,
+      "successful": 5000,
+      "failures": 0,
+      "total_time_sec": 20.682853700000123,
+      "throughput_transactions_per_second": 241.74613776821184,
+      "errors": []
+    },
+    "regression": {
+      "cases": [
+        {
+          "case_id": "REG_001_NORMAL",
+          "status": "SUCCESS",
+          "output": {
+            "ml_score": 0.0299536045640707,
+            "ml_prediction": 0,
+            "ml_label": "Legitimate",
+            "model": "XGBoost",
+            "model_version": "2.0"
+          }
+        },
+        {
+          "case_id": "REG_002_HIGH_AMOUNT",
+          "status": "SUCCESS",
+          "output": {
+            "ml_score": 0.9940775632858276,
+            "ml_prediction": 1,
+            "ml_label": "Fraud",
+            "model": "XGBoost",
+            "model_version": "2.0"
+          }
+        },
+        {
+          "case_id": "REG_003_HIGH_VELOCITY",
+          "status": "SUCCESS",
+          "output": {
+            "ml_score": 0.0299536045640707,
+            "ml_prediction": 0,
+            "ml_label": "Legitimate",
+            "model": "XGBoost",
+            "model_version": "2.0"
+          }
+        },
+        {
+          "case_id": "REG_004_IMPOSSIBLE_TRAVEL",
+          "status": "SUCCESS",
+          "output": {
+            "ml_score": 0.05486810952425003,
+            "ml_prediction": 0,
+            "ml_label": "Legitimate",
+            "model": "XGBoost",
+            "model_version": "2.0"
+          }
+        },
+        {
+          "case_id": "REG_005_NEW_CATEGORY",
+          "status": "SUCCESS",
+          "output": {
+            "ml_score": 0.07325555384159088,
+            "ml_prediction": 0,
+            "ml_label": "Legitimate",
+            "model": "XGBoost",
+            "model_version": "2.0"
+          }
+        },
+        {
+          "case_id": "REG_006_MULTIPLE_SIGNALS",
+          "status": "SUCCESS",
+          "output": {
+            "ml_score": 0.9963672161102295,
+            "ml_prediction": 1,
+            "ml_label": "Fraud",
+            "model": "XGBoost",
+            "model_version": "2.0"
+          }
+        }
+      ],
+      "differences": []
+    }
+  },
+  "verification": {
+    "baseline_detection_passed": true,
+    "invalid_input_tests_completed": true,
+    "missing_field_tests_completed": true,
+    "invalid_type_tests_completed": true,
+    "boundary_tests_completed": true,
+    "rule_scenarios_completed": true,
+    "stress_test_completed": true,
+    "regression_tests_completed": true
+  }
+}

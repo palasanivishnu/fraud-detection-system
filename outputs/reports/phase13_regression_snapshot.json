@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-09-05T16:48:55.185687+00:00",
+  "cases": [
+    {
+      "case_id": "REG_001_NORMAL",
+      "status": "SUCCESS",
+      "output": {
+        "ml_score": 0.0299536045640707,
+        "ml_prediction": 0,
+        "ml_label": "Legitimate",
+        "model": "XGBoost",
+        "model_version": "2.0"
+      }
+    },
+    {
+      "case_id": "REG_002_HIGH_AMOUNT",
+      "status": "SUCCESS",
+      "output": {
+        "ml_score": 0.9940775632858276,
+        "ml_prediction": 1,
+        "ml_label": "Fraud",
+        "model": "XGBoost",
+        "model_version": "2.0"
+      }
+    },
+    {
+      "case_id": "REG_003_HIGH_VELOCITY",
+      "status": "SUCCESS",
+      "output": {
+        "ml_score": 0.0299536045640707,
+        "ml_prediction": 0,
+        "ml_label": "Legitimate",
+        "model": "XGBoost",
+        "model_version": "2.0"
+      }
+    },
+    {
+      "case_id": "REG_004_IMPOSSIBLE_TRAVEL",
+      "status": "SUCCESS",
+      "output": {
+        "ml_score": 0.05486810952425003,
+        "ml_prediction": 0,
+        "ml_label": "Legitimate",
+        "model": "XGBoost",
+        "model_version": "2.0"
+      }
+    },
+    {
+      "case_id": "REG_005_NEW_CATEGORY",
+      "status": "SUCCESS",
+      "output": {
+        "ml_score": 0.07325555384159088,
+        "ml_prediction": 0,
+        "ml_label": "Legitimate",
+        "model": "XGBoost",
+        "model_version": "2.0"
+      }
+    },
+    {
+      "case_id": "REG_006_MULTIPLE_SIGNALS",
+      "status": "SUCCESS",
+      "output": {
+        "ml_score": 0.9963672161102295,
+        "ml_prediction": 1,
+        "ml_label": "Fraud",
+        "model": "XGBoost",
+        "model_version": "2.0"
+      }
+    }
+  ]
+}

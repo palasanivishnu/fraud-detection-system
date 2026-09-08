@@ -1,0 +1,58 @@
+{
+  "project": "StreamSentinel",
+  "component": "Person B Detection Subsystem",
+  "version": "V2.1",
+  "phases_completed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "status": "READY",
+  "primary_entry_point": "src/detection_service.py",
+  "production_model": "models/xgboost_fraud_detector.json",
+  "ml_features": [
+    "amount",
+    "amount_vs_avg_ratio",
+    "txn_count_last_5min",
+    "time_since_last_txn_sec",
+    "distance_from_last_location_km",
+    "merchant_category_is_new_for_user"
+  ],
+  "rule_engine": [
+    "HIGH_AMOUNT",
+    "HIGH_VELOCITY",
+    "IMPOSSIBLE_TRAVEL",
+    "NEW_MERCHANT_CATEGORY"
+  ],
+  "decisions": [
+    "Allow",
+    "OTP",
+    "Review",
+    "Block"
+  ],
+  "person_b_to_person_c_output": [
+    "transaction_id",
+    "user_id",
+    "risk_score",
+    "rule_flags",
+    "ml_fraud_score",
+    "decision",
+    "human_readable_reason",
+    "processed_at",
+    "latency_ms"
+  ],
+  "generated_report": "outputs\\reports\\PERSON_B_FINAL_REPORT_V2.1.md"
+}
